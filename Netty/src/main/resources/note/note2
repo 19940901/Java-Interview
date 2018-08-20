@@ -1,0 +1,24 @@
+一、ChannelHandler,ChannelHandlerContext,ChannelPipeline三者的关系
+
+一个ChannelPipeline中可以有多个ChannelHandler实例，
+而每一个ChannelHandler实例与ChannelPipeline之间的桥梁就是ChannelHandlerContext实例
+
+调用当前handler之后同一类型的channel中的某个方法，这里的同一类型指的是同一个方向，
+比如inbound调用inbound，outbound调用outbound类型的channel，一般来说，
+都是一个channel的ChannnelActive方法中调用fireChannelActive来触发调用下一个handler中的ChannelActive方法
+==================参考netty .hello 中的helloClientHandler==================================
+
+decoder与encoder可以自己重写，用来处理数据，如果服务器向client发送数据则需要加入encoder，client需要重写encoder，反之亦然
+
+====================================TCP拆包，粘包==========================================
+当发送的数据过长，TCP会将该数据切割成多个以正常接收，当数据很短但发送次数过多时，将其自动粘包成较长的数据。netty处理该数据时可以在数据的
+后面添加separator标识该数据，并在服务端bootstrap中添加 ch.pipeline().addLast(new LineBasedFrameDecoder(2048));解析器。
+
+当定长的数据过多，可以将根据数据的长度来告诉服务器所发送的数据该如何接收ch.pipeline().addLast(new FixedLengthFrameDecoder(23));
+
+同时还可以在发送的数据中添加分隔符，告诉服务器根据分隔符来切割数据
+ch.pipeline().addLast(new DelimiterBasedFrameDecoder(1024,Unpooled.copiedBuffer("$$__".getBytes())));
+
+
+自定义协议来规范数据发送该协议应包括头数据长度，body长度，body数据
+========================================================================================================

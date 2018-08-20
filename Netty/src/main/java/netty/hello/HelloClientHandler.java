@@ -12,8 +12,12 @@ public class HelloClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        super.channelActive(ctx);
+       // super.channelActive(ctx);
+        System.out.println("我是客户端第一个handler");
         System.out.println("client alive");
+        //只有写了这个，后面的handler中的channelActive方法才会调用
+        ctx.channel().read();
+        ctx.fireChannelActive();
     }
 
     @Override

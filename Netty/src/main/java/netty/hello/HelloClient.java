@@ -29,11 +29,12 @@ public class HelloClient {
                             p.addLast("decoder", new StringDecoder());
                             p.addLast("encoder",new StringEncoder());
                             p.addLast(new HelloClientHandler());
+                            p.addLast(new HelloclientHandler1());
 
                         }
                     });
             ChannelFuture future=b.connect(HOST,PORT).sync();
-            future.channel().writeAndFlush("hello server im client2");
+            future.channel().writeAndFlush("hello server im client4");
             future.channel().closeFuture().sync();
 
         }finally {

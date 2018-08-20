@@ -1,0 +1,37 @@
+第一节学习了netty，建立了一个简单的server与client，server端采用的是多线程，eventLoopGroup work与eventLoopGroup boos(1),然后分别
+添加到bootstrap与serverBootStrap中,然后建立channel，设置option，添加handler（在此创建pipline，添加decoder，handler）
+创建future建立连接并同步，发送数据，关闭并同步
+server端与client端各建立一个channel用来通信，然后用一个handler来处理相关信息
+
+ /**
+     *
+     *
+     *
+     *
+     *                   ________________________                                 __________________________
+     *                  |                        |                               |                          |
+     *                  |   <-----Inbound-----   |                               |   ---inbound------- >    |   ________
+     *                  |   _____        ______  |                               |    _______      ____     |  |        |
+     *      _______     |  |     |       |    |  |                               |    |     |     |    |    |  |        |
+     *     |       |    |  |  ②  |       |  ③ |  |      ___________________      |    |  ⑤  |     |  ⑥ |    |  |        |
+     *     |       |    |  |_____|       |____|  |     |                   |     |    |_____|     |____|    |  |        |
+     *     |client |----|-------______-----------|-----|      network      |-----|--------------------------|--| server |
+     *     |       |    |       |     |          |     |___________________|     |          ______          |  |        |
+     *     |       |    |       |  ①  |          |                               |          |     |         |  |        |
+     *     |       |    |       |_____|          |                               |          |  ④  |         |  |________|
+     *     |       |    |                        |                               |          |_____|         |
+     *     |_______|    |   -----Outbound--->    |                               |    <-----outbound----    |
+     *                  |___ChannelPipeline______|                               |______ChannelPipeline_____|
+     *
+     *  ①：StringEncoder继承于MessageToMessageEncoder，而MessageToMessageEncoder又继承于ChannelOutboundHandlerAdapter
+     *  ②：HelloWorldClientHandler.java
+     *  ③：StringDecoder继承于MessageToMessageDecoder，而MessageToMessageDecoder又继承于ChannelInboundHandlerAdapter
+     *  ④：StringEncoder 编码器
+     *  ⑤：StringDecoder 解码器
+     *  ⑥：HelloWorldServerHandler.java
+     *
+     *
+     *
+     */
+SimpleChannelInboundHandler继承自ChannelInboundHandlerAdapter并重写了channelRead方法
+
