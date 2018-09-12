@@ -1,8 +1,6 @@
 package algorithm;
 
-import java.lang.reflect.Array;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
@@ -27,7 +25,11 @@ public class NumToCh {
 
     private static final Map<Character, String> map = new HashMap<>(9);
     private static final Map<Integer, String> carry = new HashMap<>(5);
-    private static Stack<Character> stack=new Stack<>();
+    private static Stack<Character> stack = new Stack<>();
+
+    private final String[] digital = {"零", "一", "二", "三", "四", "五", "六", "七", "八", "九"};
+    private final String[] radices = {"", "十", "百", "千"};
+    private final String[] bigRadices = {"", "万", "亿"};
 
     static {
         carry.put(0, null);
@@ -57,34 +59,43 @@ public class NumToCh {
         FLO_NUM = num.split(".")[1];
     }
 
+    String d = "";
+    int quotient;
+    int modulus;
+    int zeroCount = 0;
+    String ch = "";
+
     public String IntToCh(String num) {
+        for (int i = 0; i < num.length(); i++) {
+            int p = num.length() - 1 - i;
+            d = num.substring(i, i + 1);
+            quotient = p / 4;
+            modulus = p % 4;
 
-        char[] n = num.toCharArray();
-        for(int i=0;i<n.length;i++){
-            stack.push(n[i]);
-        }
-        String s=null;
-        String c=null;
-        int index=0;
+            if (d.equals("0")) {
+                zeroCount++;
 
-        while (!stack.empty()){
-            //获取单位
-            if (index==8){
-                carry1=true;
-            }else if (index%4!=0){
-                c=carry.get(index%4);
-            }else{
-                c=carry.get(4);
+            } else {
+                if (zeroCount > 0) {
+                    ch += digital[0];
+                }
+
+                if (d.equals("1")&&radices[modulus].equals("十")&&i==0) {
+                    ch += radices[modulus];
+                }else if (d.equals("1")&&radices[modulus].equals("十")&&zeroCount>0){
+                    ch += radices[modulus];
+                }else{
+                    ch += digital[Integer.parseInt(d)] + radices[modulus];
+                }
+                zeroCount = 0;
+
             }
-
-            //获取汉字
-            s=map.get(stack.pop());
-            index++;
+            if (modulus == 0 && zeroCount < 4) {
+                ch += bigRadices[quotient];
+            }
         }
+        return ch;
 
-
-
-        return null;
     }
 
 
@@ -98,13 +109,11 @@ public class NumToCh {
 
 
     public static void main(String[] args) {
-       String a="12345";
-       // char c = a.charAt(1);
-        
-       while (!stack.empty()){
+        String a = "12345";
+        // char c = a.charAt(1);
 
-           System.out.println(stack.pop());
-       }
+        String s = new NumToCh().IntToCh("110000000011");
+        System.out.println(s);
 
 
     }
