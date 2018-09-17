@@ -22,29 +22,29 @@ import java.util.Map.Entry;
 
 public class Youdao {
 
-    public static void main(String[] args) throws Exception {
-        String appKey ="0f1edcddc8d649b4";
-        String query = "I just want it to sit in the corner and shake its head";
-        String salt = String.valueOf(System.currentTimeMillis());
-        String to = "zh-CHS";
-        String from = "EN";
-        String sign = md5(appKey + query + salt+ "jwbzzVOIzhaJ3Wc6sBYhDUUFBfNHoe3V");
-        Map params = new HashMap();
-        params.put("q", query);
-        params.put("from", from);
-        params.put("to", to);
-        params.put("sign", sign);
-        params.put("salt", salt);
-        params.put("appKey", appKey);
-        System.out.println(requestForHttp("http://openapi.youdao.com/api", params));
-    }
+//    public static void main(String[] args) throws Exception {
+//        String appKey ="0f1edcddc8d649b4";
+//        String query = "I just want it to sit in the corner and shake its head";
+//        String salt = String.valueOf(System.currentTimeMillis());
+//        String to = "zh-CHS";
+//        String from = "EN";
+//        String sign = md5(appKey + query + salt+ "jwbzzVOIzhaJ3Wc6sBYhDUUFBfNHoe3V");
+//        Map params = new HashMap();
+//        params.put("q", query);
+//        params.put("from", from);
+//        params.put("to", to);
+//        params.put("sign", sign);
+//        params.put("salt", salt);
+//        params.put("appKey", appKey);
+//        System.out.println(requestForHttp("http://openapi.youdao.com/api", params));
+//    }
 
     public static String requestForHttp(String url,Map requestParams) throws Exception{
         String result = null;
         CloseableHttpClient httpClient = HttpClients.createDefault();
         /**HttpPost*/
         HttpPost httpPost = new HttpPost(url);
-        System.out.println(new JSONObject(requestParams).toString());
+       // System.out.println(new JSONObject(requestParams).toString());
         List params = new ArrayList();
         Iterator it = requestParams.entrySet().iterator();
         while (it.hasNext()) {
@@ -171,12 +171,12 @@ public class Youdao {
     /**
      *
      */
-    public String Inter(String e){
+    public String Inter(String e,String sourLan,String desLan){
         String appKey ="0f1edcddc8d649b4";
         String query =e;
         String salt = String.valueOf(System.currentTimeMillis());
-        String to = "zh-CHS";
-        String from = "EN";
+        String to = desLan;
+        String from = sourLan;
         String sign = md5(appKey + query + salt+ "jwbzzVOIzhaJ3Wc6sBYhDUUFBfNHoe3V");
         Map params = new HashMap();
         params.put("q", query);
