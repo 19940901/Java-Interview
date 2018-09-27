@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.regex.Pattern;
 
 public class Tool {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
 
         String path = "C:\\Users\\soul.cao\\Desktop\\srt\\";
 
