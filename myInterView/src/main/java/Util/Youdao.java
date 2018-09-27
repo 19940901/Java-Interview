@@ -39,12 +39,12 @@ public class Youdao {
 //        System.out.println(requestForHttp("http://openapi.youdao.com/api", params));
 //    }
 
-    public static String requestForHttp(String url,Map requestParams) throws Exception{
+    public static String requestForHttp(String url, Map requestParams) throws Exception {
         String result = null;
         CloseableHttpClient httpClient = HttpClients.createDefault();
         /**HttpPost*/
         HttpPost httpPost = new HttpPost(url);
-       // System.out.println(new JSONObject(requestParams).toString());
+        // System.out.println(new JSONObject(requestParams).toString());
         List params = new ArrayList();
         Iterator it = requestParams.entrySet().iterator();
         while (it.hasNext()) {
@@ -55,41 +55,42 @@ public class Youdao {
                 params.add(new BasicNameValuePair(key, value));
             }
         }
-        httpPost.setEntity(new UrlEncodedFormEntity(params,"UTF-8"));
+        httpPost.setEntity(new UrlEncodedFormEntity(params, "UTF-8"));
         /**HttpResponse*/
         CloseableHttpResponse httpResponse = httpClient.execute(httpPost);
-        try{
+        try {
             HttpEntity httpEntity = httpResponse.getEntity();
             result = EntityUtils.toString(httpEntity, "utf-8");
             EntityUtils.consume(httpEntity);
-        }finally{
-            try{
-                if(httpResponse!=null){
+        } finally {
+            try {
+                if (httpResponse != null) {
                     httpResponse.close();
                 }
-            }catch(IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        JSONObject jo= JSON.parseObject(result);
+        JSONObject jo = JSON.parseObject(result);
         //JSONObject res=jo.getJSONObject();
-        String re=jo.getString("translation");
+        String re = jo.getString("translation");
         return re;
     }
 
     /**
      * 生成32位MD5摘要
+     *
      * @param string
      * @return
      */
     public static String md5(String string) {
-        if(string == null){
+        if (string == null) {
             return null;
         }
         char hexDigits[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
                 'A', 'B', 'C', 'D', 'E', 'F'};
 
-        try{
+        try {
             byte[] btInput = string.getBytes("utf-8");
             /** 获得MD5摘要算法的 MessageDigest 对象 */
             MessageDigest mdInst = MessageDigest.getInstance("MD5");
@@ -106,13 +107,14 @@ public class Youdao {
                 str[k++] = hexDigits[byte0 & 0xf];
             }
             return new String(str);
-        }catch(NoSuchAlgorithmException | UnsupportedEncodingException e){
+        } catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
             return null;
         }
     }
 
     /**
      * 根据api地址和参数生成请求URL
+     *
      * @param url
      * @param params
      * @return
@@ -149,8 +151,10 @@ public class Youdao {
 
         return builder.toString();
     }
+
     /**
      * 进行URL编码
+     *
      * @param input
      * @return
      */
@@ -171,38 +175,41 @@ public class Youdao {
     /**
      *
      */
-    public String Inter(String e,String sourLan,String desLan){
-        String appKey ="0f1edcddc8d649b4";
-        String query =e;
-        String salt = String.valueOf(System.currentTimeMillis());
-        String to = desLan;
-        String from = sourLan;
-        String sign = md5(appKey + query + salt+ "jwbzzVOIzhaJ3Wc6sBYhDUUFBfNHoe3V");
-        Map params = new HashMap();
-        params.put("q", query);
-        params.put("from", from);
-        params.put("to", to);
-        params.put("sign", sign);
-        params.put("salt", salt);
-        params.put("appKey", appKey);
-        String res="";
+    public String Inter(String e, String sourLan, String desLan) {
+
+
+        String res = "";
         try {
-          res=  requestForHttp("http://openapi.youdao.com/api", params);
+            Properties p = new Properties();
+            p.load(Tool.class.getResourceAsStream("/pro/youdao.properties"));
+            String appKey = p.getProperty("ID");
+            String query = e;
+            String salt = String.valueOf(System.currentTimeMillis());
+            String to = desLan;
+            String from = sourLan;
+            String sign = md5(appKey + query + salt + p.getProperty("KEY"));
+            Map params = new HashMap();
+            params.put("q", query);
+            params.put("from", from);
+            params.put("to", to);
+            params.put("sign", sign);
+            params.put("salt", salt);
+            params.put("appKey", appKey);
+            res = requestForHttp("http://openapi.youdao.com/api", params);
         } catch (Exception e1) {
             e1.printStackTrace();
         }
         String temp;
         try {
-            temp= res.replaceAll("\\pP" , " ");
+            temp = res.replaceAll("\\pP", " ");
 
-        }
-        catch (Exception ee){
+        } catch (Exception ee) {
             ee.printStackTrace();
-            return  " ";
+            return " ";
         }
 
 
-        return  temp.trim();
+        return temp.trim();
     }
 }
 

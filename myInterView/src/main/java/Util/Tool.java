@@ -1,14 +1,18 @@
 package Util;
 
+import java.io.IOException;
 import java.util.regex.Pattern;
 
-public class test1 {
-    public static void main(String[] args) {
+public class Tool {
+    public static void main(String[] args) throws IOException {
+
+        String path = "C:\\Users\\soul.cao\\Desktop\\srt\\";
+
         String line = "00:03:10,483 --> 00:03:13,849";
         String regex = "\\d\\d:\\d\\d:\\d\\d,\\d\\d\\d --> \\d\\d:\\d\\d:\\d\\d,\\d\\d\\d";
         System.out.println(Pattern.matches(regex, line));
         System.out.println(Language.Lan.CH);
-        Translator.translate("E:/code/test.srt","E:/code/test1.srt");
+        Translator.translate(path + "test1" + ".srt", path + "test3" + ".srt");
         System.out.println();
     }
 }

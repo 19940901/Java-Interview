@@ -112,7 +112,7 @@ public class NumToCh {
         String a = "12345";
         // char c = a.charAt(1);
 
-        String s = new NumToCh().IntToCh("110000000011");
+        String s = new NumToCh().IntToCh("110000900011");
         System.out.println(s);
 
 
