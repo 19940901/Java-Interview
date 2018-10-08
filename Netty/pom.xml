@@ -15,6 +15,9 @@
             <version>4.10</version>
             <scope>test</scope>
         </dependency>
+
+        <!--netty相关-->
+
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>

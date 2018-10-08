@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/netty-action.iml" filepath="$PROJECT_DIR$/netty-action.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-action-common/netty-action-common.iml" filepath="$PROJECT_DIR$/netty-action-common/netty-action-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-action-heartbeat/netty-action-hearbeat.iml" filepath="$PROJECT_DIR$/netty-action-heartbeat/netty-action-hearbeat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-action-heartbeat-client/netty-action-heartbeat-client.iml" filepath="$PROJECT_DIR$/netty-action-heartbeat-client/netty-action-heartbeat-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-admin/springboot-admin.iml" filepath="$PROJECT_DIR$/springboot-admin/springboot-admin.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: slf4j-api-1.7.21.jar log4j-api-2.4.1.jar javax.inject-1.ja
+ r jopt-simple-5.0.2.jar junit-4.12.jar bt-core-1.7.jar guice-4.1.0.ja
+ r log4j-core-2.4.1.jar guice-multibindings-4.1.0.jar lanterna-3.0.0-b
+ eta3.jar commons-codec-1.9.jar log4j-slf4j-impl-2.4.1.jar commons-log
+ ging-1.2.jar guava-19.0.jar snakeyaml-1.17.jar aopalliance-1.0.jar ha
+ mcrest-core-1.3.jar bt-bencoding-1.7.jar bt-dht-1.7.jar bt-http-track
+ er-client-1.7.jar httpcore-4.4.4.jar httpclient-4.5.2.jar
+Main-Class: bt.cli.CliClient
+

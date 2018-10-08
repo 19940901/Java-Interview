@@ -8,10 +8,8 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.handler.codec.string.StringDecoder;
-import io.netty.handler.codec.string.StringEncoder;
-import protocol.MyDecoder;
-import protocol.MyEncoder;
+import netty.protocol.MyDecoder;
+import netty.protocol.MyEncoder;
 
 public class TcpClient {
     static final String HOST = System.getProperty("host", "127.0.0.1");

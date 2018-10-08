@@ -9,10 +9,8 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.string.StringDecoder;
-import io.netty.handler.codec.string.StringEncoder;
-import protocol.MyDecoder;
-import protocol.MyEncoder;
+import netty.protocol.MyDecoder;
+import netty.protocol.MyEncoder;
 
 import java.net.InetSocketAddress;
 

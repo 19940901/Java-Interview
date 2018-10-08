@@ -1,21 +1,26 @@
 package netty.TcpPackage;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.channel.ChannelOutboundHandlerAdapter;
-import protocol.MyProtocol;
+import netty.protocol.MyProtocol;
+
+import javax.imageio.stream.FileImageInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
 
 public class ClientHandler extends ChannelInboundHandlerAdapter {
     private byte[] req; //接收msg
     private int counter;
+
+    private byte[] data=new byte[2048];
 
     public ClientHandler() {
 //        req = ("BazingaLyncc is learner" + System.getProperty("line.separator"))
 //            .getBytes();
         req = ("In this chapter you general, we recommend Java Concurrency in Practice by Brian Goetz. His book w"
                 + "sdsa ddasd asdsadas dsadasdas").getBytes();
+
     }
 
 
@@ -32,6 +37,8 @@ public class ClientHandler extends ChannelInboundHandlerAdapter {
 //        ctx.writeAndFlush(message);
         String ress = "i am client ,if you receive please reply";
         MyProtocol req = new MyProtocol(ress.getBytes().length, ress.getBytes());
+       // ctx.writeAndFlush(new MyProtocol(getImage("E:\\code\\Netty\\src\\main\\resources\\images\\jin.jpg").length, data));
+
         ctx.writeAndFlush(req);
     }
 
@@ -39,8 +46,8 @@ public class ClientHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
        // super.channelRead(ctx, msg);
         System.out.println("msg");
-        MyProtocol buf = (MyProtocol) msg;
-        System.out.println("this is client : "+buf.toString());
+
+
 
     }
 
@@ -49,5 +56,25 @@ public class ClientHandler extends ChannelInboundHandlerAdapter {
         super.exceptionCaught(ctx, cause);
 
         ctx.close();
+    }
+
+
+    /**
+     * 获取image
+     */
+    public byte[] getImage(String path) throws IOException {
+        FileImageInputStream fin = new FileImageInputStream(new File(path));
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+
+        byte[] buf = new byte[2048];
+        int temp = 0;
+        while ((temp = fin.read(buf)) != -1) {
+            out.write(buf, 0, temp);
+        }
+        data = out.toByteArray();
+
+        out.close();
+
+        return data;
     }
 }

@@ -1,0 +1,17 @@
+ 分页
+ int cpage=1; //当前页 
+int ipage=5; //分页单位 
+int spage; //开始页 
+//判断起始页 
+  spage=(cpage-1)*ipage;
+ 
+ zbsql ="select * from (select bbjc,style,status,tsftime,rownum as my_rownum  from tb_baobiao_info  where rownum <="+pages*ipage+") where my_rownum>"+spage+"";
+ 
+ zbsql ="select * from (select bbjc,style,status,tsftime,rownum as my_rownum from tb_baobiao_info where rownum <="+pages*ipage+" ORDER BY TSFTIME DESC) where my_rownum>"+spage+"";
+ 
+接受一个数组，并且输出一个数组，则先注意数组在oracle中的定义方法如下： 
+
+CREATE TYPE array_table AS TABLE OF VARCHAR2 (50); -- Array of String 
+
+CREATE TYPE array_int AS TABLE OF NUMBER;          -- Array of integers 
+

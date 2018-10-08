@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="netty-action-common" />
+        <module name="netty-action-hearbeat" />
+        <module name="netty-action-heartbeat-client" />
+        <module name="springboot-admin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="netty-action" target="1.6" />
+      <module name="netty-action-common" target="1.6" />
+      <module name="netty-action-hearbeat" target="1.8" />
+      <module name="netty-action-heartbeat-client" target="1.8" />
+      <module name="springboot-admin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

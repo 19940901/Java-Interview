@@ -1,0 +1,9 @@
+hashmap：由数组与链表组成，将key的hash值存放在数组中并获取下标，如果有相同的hash值则将其以treenode的形式存放，获取时根据hash值和key来得到value
+
+hashset：完全借助于hashmap来实现，先实例化一个map，添加时用map.put(value,present)=null来实现
+
+currenthashmap：线程安全，由segment数组与hashentry组成。ConcurrentHashMap 采用了分段锁技术，
+其中 Segment 继承于 ReentrantLock。不会像 HashTable 那样不管是 put 还是 get 操作都需要做同步处理，理论上 ConcurrentHashMap 
+支持 CurrencyLevel (Segment 数组数量)的线程并发。每当一个线程占用锁访问一个 Segment 时，不会影响到其他的 Segment。
+
+linkedhashmap：有序的map，有写入排序与访问排序，访问排序是将访问的数据移动到链表的末尾。重写removeeldest方法可以移除最先插入的数据。

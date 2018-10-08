@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b50e7b1d-0426-44f7-8b2d-19031ff6b582" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../bt-master/bt-cli/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../interview/.idea/interview.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../interview/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../interview/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../interview/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../interview/src/main/java/com/interView/test/leftMove" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myInterView/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myInterView/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myInterView/src/main/java/Test/Except.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myInterView/src/main/java/Test/LeftMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myInterView/src/main/java/threads/EvenNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myInterView/src/main/java/threads/NumberAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myInterView/src/main/java/threads/OddNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myInterView/src/main/java/threads/Other.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../myInterView/src/main/java/threads/ThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__io_springfox_springfox_core_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__io_springfox_springfox_schema_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__io_springfox_springfox_spi_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__io_swagger_swagger_models_1_5_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__org_mapstruct_mapstruct_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__org_springframework_spring_aop_4_3_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__org_springframework_spring_beans_4_3_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__org_springframework_spring_context_4_3_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__org_springframework_spring_core_4_3_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/libraries/Maven__org_springframework_spring_expression_4_3_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-common/netty-action-common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat-client/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat-client/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat-client/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat-client/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat-client/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat-client/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat-client/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat-client/netty-action-heartbeat-client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-action-heartbeat/netty-action-hearbeat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.github/ISSUE_TEMPLATE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.github/PULL_REQUEST_TEMPLATE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../79884.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/ArrayList.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/Cache-design.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/ClassLoad.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/ConcurrentHashMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/Consistent-Hash.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/DB-split.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/GarbageCollection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/HashMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/ID-generator.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/Java-lock.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/Limiting.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/LinkedList.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/MemoryAllocation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/MySQL-Index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/OOM-analysis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/ReentrantLock.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/SQL-optimization.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/Spike.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/SpringAOP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/Synchronize.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/TCP-IP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/Thread-common-problem.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/ThreadPoolExecutor.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/Threadcore.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/collection/HashSet.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/collection/LinkedHashMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/concurrent/thread-communication.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/concurrent/volatile.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/newObject.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MD/spring/spring-bean-lifecycle.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/actual/LRUAbstractMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/actual/LRULinkedMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/actual/LRUMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/actual/ReadFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/actual/ThreadCommunication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/actual/TwoThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/actual/TwoThreadWaitNotify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/algorithm/ArrayKShift.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/algorithm/BinaryNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/algorithm/BinaryNodeTravel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/algorithm/HappyNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/algorithm/LinkLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/algorithm/LinkedListMergeSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/algorithm/MergeTwoSortedLists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/algorithm/ReverseNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/algorithm/TwoArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/algorithm/TwoStackQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/algorithm/TwoSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/basic/HashMapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/basic/StringTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/classloader/ChildClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/classloader/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/classloader/SuperClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/concurrent/Singleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/concurrent/StopThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/concurrent/ThreadState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/concurrent/Volatile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/concurrent/VolatileInc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/design/pattern/factorymethod/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/design/pattern/factorymethod/AnimalFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/design/pattern/factorymethod/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/design/pattern/factorymethod/CatFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/design/pattern/factorymethod/Fish.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/design/pattern/factorymethod/FishFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/design/pattern/factorymethod/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/gc/MinorGC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/guava/CacheLoaderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/guava/callback/CallBackListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/guava/callback/Caller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/guava/callback/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/guava/callback/Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/hystrix/CommandOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/hystrix/CommandTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/hystrix/CommandUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/oom/heap/HeapOOM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/oom/heap/MetaSpaceOOM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/proxy/cglib/RealSubject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/proxy/cglib/RealSubjectIntercept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/proxy/jdk/CustomizeHandle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/proxy/jdk/ISubject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/proxy/jdk/impl/ISubjectImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/red/RedPacket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/spring/LifeCycleConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/spring/SpringLifeCycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/spring/annotation/AnnotationBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/spring/aware/SpringLifeCycleAware.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/spring/processor/SpringLifeCycleProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/spring/service/SpringLifeCycleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/crossoverjie/synchronize/Synchronize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/actual/AbstractMapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/actual/LRULinkedMapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/actual/LRUMapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/algorithm/BinaryNodeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/algorithm/BinaryNodeTravelTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/algorithm/HappyNumTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/algorithm/LinkLoopTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/algorithm/MergeTwoSortedListsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/algorithm/ReverseNodeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/algorithm/TwoStackQueueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/algorithm/TwoSumTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/crossoverjie/proxy/JDKProxyTest.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-769773554">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 2)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="100" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b50e7b1d-0426-44f7-8b2d-19031ff6b582" name="Default Changelist" comment="" />
+      <created>1534318895683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534318895683</updated>
+      <workItem from="1534318898987" duration="124000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="124000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+</project>

@@ -21,4 +21,21 @@ ch.pipeline().addLast(new DelimiterBasedFrameDecoder(1024,Unpooled.copiedBuffer(
 
 
 自定义协议来规范数据发送该协议应包括头数据长度，body长度，body数据
-========================================================================================================
+============================================lombok============================================================
+在项目中使用Lombok可以减少很多重复代码的书写。比如说getter/setter/toString等方法的编写。
+
+Lombok有哪些注解
+@Setter
+@Getter
+@Data
+@Log(这是一个泛型注解，具体有很多种形式)
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode
+@NonNull
+@Cleanup
+@ToString
+@RequiredArgsConstructor
+@Value
+@SneakyThrows
+@Synchronized

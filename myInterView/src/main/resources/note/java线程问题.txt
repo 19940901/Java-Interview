@@ -1,0 +1,144 @@
+https://github.com/crossoverJie/Java-Interview/blob/master/MD/ThreadPoolExecutor.md
+
+线程，三个问题：上下文切换，死锁，资源限制（集群）
+
+线程池：
+corePoolSize 为线程池的基本大小。
+maximumPoolSize 为线程池最大线程大小。
+keepAliveTime 和 unit 则是线程空闲后的存活时间。
+workQueue 用于存放任务的阻塞队列。
+handler 当队列和最大线程池都满了之后的饱和策略。
+
+线程池状态：
+running 自然运行状态
+shutdown 调用shutdown方法，不在接活，但队列里面的任务得执行完
+stop 调用shutdownnow方法，不再接活同时抛弃队列里面的任务并中断当前任务
+tidying 所有任务执行完毕，在调用shutdown/shutdownnow中都会尝试更新位此状态状态
+terminated 终止状态，当执行terminated后会更新为这个状态
+
+工作原理
+如果poolsize<corePoolSize就执行addifundercorepoolsize（）将 Runnable 任务封装成 Worker 任务 , 创建新的 Thread ，执行 Worker 任务。如果不满足条件，则返回 false 
+如果poolsize>corePoolSize 有两个解决办法：
+1. 将其添加到workqueue等待队列，如果等待队列已满再判断是否poolsize再判断是否poolsize<MaximumPoolSize如果是则执行addIfUnderMaximumPoolSize（）创建新线程去完成工作，如果还不能满足
+则用rejectedExecutionHandler来处理
+
+
+线程复用
+当一个线程执行完任务是不会立即退出而是去workqueue中寻找任务，如果在keepalivetime时间内找不到则会退出。runnable任务会被包装成worker，worker利用gettask来获取新任务。
+
+
+关闭线程池
+long start = System.currentTimeMillis();
+        for (int i = 0; i <= 5; i++) {
+            pool.execute(new Job());
+        }
+
+        pool.shutdown();
+
+        while (!pool.awaitTermination(1, TimeUnit.SECONDS)) {
+            LOGGER.info("线程还在执行。。。");
+        }
+        long end = System.currentTimeMillis();
+        LOGGER.info("一共处理了【{}】", (end - start));
+
+spring中使用线程池
+@Configuration
+public class TreadPoolConfig {
+    /**
+     * 消费队列线程
+     * @return
+     */
+    @Bean(value = "consumerQueueThreadPool")
+    public ExecutorService buildConsumerQueueThreadPool(){
+        ThreadFactory namedThreadFactory = new ThreadFactoryBuilder()
+                .setNameFormat("consumer-queue-thread-%d").build();
+
+        ExecutorService pool = new ThreadPoolExecutor(5, 5, 0L, TimeUnit.MILLISECONDS,
+                new ArrayBlockingQueue<Runnable>(5),namedThreadFactory,new ThreadPoolExecutor.AbortPolicy());
+
+        return pool ;
+    }
+}
+使用：
+@Resource(name = "consumerQueueThreadPool")
+    private ExecutorService consumerQueueThreadPool;
+    @Override
+    public void execute() {
+
+        //消费队列
+        for (int i = 0; i < 5; i++) {
+            consumerQueueThreadPool.execute(new ConsumerQueueThread());
+        }
+    }
+	
+利用actuator 组件来做线程池的监控
+	
+利用hystrix做线程隔离 ：按照业务对线程池进行分类，当其中一个线程池出现问题时，不会影响
+其他的线程运行	
+
+
+https://github.com/crossoverJie/Java-Interview/blob/master/MD/concurrent/thread-communication.md
+
+
+====================================================================线程通信=======================================================
+等待通知：两个线程通过对同一对象调用wait()与notify()来实现通信
+
+jion()
+
+volatile共享内存：当一个变量被 volatile 修饰时，任何线程对它的写操作都会立即刷新到主内存中，并且会强制让缓存了该变量的线程中的数据清空，
+必须从主内存重新读取最新数据。
+
+CountDownLatch 并发工具:
+						初始化一个 CountDownLatch 时告诉并发的线程，然后在每个线程处理完毕之后调用 countDown() 方法。
+						该方法会将 AQS 内置的一个 state 状态 -1 。
+						最终在主线程调用 await() 方法，它会阻塞直到 state == 0 的时候返回。
+
+CyclicBarrier 并发工具:
+						CyclicBarrier 中文名叫做屏障或者是栅栏，也可以用于线程间通信。它可以等待 N 个线程都达到某个状态后继续运行的效果。
+						首先初始化线程参与者。
+						调用 await() 将会在所有参与者线程都调用之前等待。
+						直到所有参与者都调用了 await() 后，所有线程从 await() 返回继续后续逻辑。
+线程响应中断:thread.interrupt(),必须在线程中对其进行判断，否则没有作用
+
+线程池 awaitTermination() 方法
+
+管道通信：//面向于字符 PipedInputStream 面向于字节
+			PipedWriter writer = new PipedWriter();
+			PipedReader reader = new PipedReader();
+			//输入输出流建立连接
+			writer.connect(reader);
+
+===================================================reentrantlock======================================================================
+
+内存可见性：分为非公平锁与公平锁，通过构造方法来区分。非公平锁属于抢占式，效率较高，能更好的利用cpu时间，但是当线程运行时间要远大于线程等待时间
+那么这个差距就变小了，同时公平锁使业务可控。
+
+ 指令重排：volatile 之后可以防止这样的重排优化，保证业务的正确性	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

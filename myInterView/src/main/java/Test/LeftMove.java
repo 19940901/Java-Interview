@@ -27,6 +27,8 @@ public class LeftMove {
         String name="cao";
         int i = (h = name.hashCode()) ^ (h >>> 16);
         System.out.println(h >>> 16);
+
+
     }
 
 }
